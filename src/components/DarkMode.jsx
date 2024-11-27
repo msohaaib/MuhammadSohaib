@@ -13,7 +13,7 @@ const DarkMode = () => {
             element.classList.remove("dark")
             localStorage.setItem("theme", "light")
         }
-    },[theme] )
+    },[element.classList, theme] )
     
 return (
     <div className='relative'>
